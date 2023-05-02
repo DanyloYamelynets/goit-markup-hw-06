@@ -460,6 +460,7 @@ address a {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 80px;
 }
 .footer-item {
   width: 40px;
@@ -481,6 +482,61 @@ address a {
 }
 .footer-net {
   fill: var(--secondary-white-color);
+}
+.label-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+.footer-email {
+  min-width: 264px;
+  height: 40px;
+  padding: 7px 16px;
+  border: 1px solid var(--primary-white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+.footer-email:focus {
+  border: 1px solid var(--accent-color);
+}
+.footer-email::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+}
+.footer-btn {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 64px 8px 24px;
+  border: none;
+  transition: background-color var(--animation-transition);
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--accent-hover-color);
+}
+.subscribe-icon {
+  margin: 10px 24px 10px 16px;
+  align-items: center;
+  position: absolute;
+  fill: currentColor;
 }
 /* -============================Кнопки==========================- */
 button {
@@ -619,13 +675,15 @@ button {
   align-items: center;
   justify-content: center;
   right: 24px;
-  top: 32px;
+  top: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: var(--border-btn-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: background-color var(--animation-transition),
+  fill var(--animation-transition);
 }
 .modal-close {
   color: var(--primary-text-color);
@@ -746,10 +804,10 @@ button {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-border-radius: 2px;
-color: transparent;
-transition: background-color var(--animation-transition);
-cursor: pointer;
+  border-radius: 2px;
+  color: transparent;
+  transition: background-color var(--animation-transition);
+  cursor: pointer;
 }
 .icon-checkbox {
   fill: currentColor;
@@ -772,5 +830,4 @@ cursor: pointer;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #8e8f99;
-}
 }
