@@ -22,7 +22,7 @@ body {
 /* фон кнопок фільтру при наведенні #404BBF */
 /* фон кнопок фільтру без наведення і текст футера #F4F4FD */
 
-/* Логотипи */
+/* ===============Логотипи==================== */
 .logo {
   display: inline-block;
   color: var(--accent-color);
@@ -56,7 +56,7 @@ footer .logo {
   text-transform: uppercase;
 }
 
-/* Атрибути */
+/* ====================АТРИБУТИ============================ */
 .link {
   text-decoration: none;
 }
@@ -74,8 +74,11 @@ img {
 p {
   margin: 0;
 }
+textarea {
+  resize: none;
+}
 
-/* Хедер */
+/* ============================ХЕДЕР===================== */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -118,7 +121,7 @@ p {
   bottom: -1px;
   left: 0;
 }
-/* contacts */
+/* ===========================КОНТАКТИ===================== */
 .address-list {
   padding: 0;
   margin: 0;
@@ -144,7 +147,7 @@ address a {
   color: var(--accent-hover-color);
 }
 
-/* Герой */
+/* ============================ГЕРОЙ============================ */
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 700;
@@ -174,7 +177,7 @@ address a {
   margin-right: auto;
 }
 
-/* Секція ВЛАСТИВОСТІ */
+/* ========================Секція ВЛАСТИВОСТІ=================== */
 .section-features {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -216,7 +219,7 @@ address a {
   margin-bottom: 0;
 }
 
-/* Секція РОБОТИ */
+/* =======================Секція РОБОТИ========================= */
 .section-works {
   padding-bottom: 120px;
 }
@@ -239,7 +242,7 @@ address a {
   letter-spacing: 0.02em;
 }
 
-/* Секція КОМАНДА */
+/* =========================Секція КОМАНДА====================== */
 .section-description {
   color: var(--secondary-text-color);
   font-weight: 400;
@@ -313,7 +316,7 @@ address a {
   fill: var(--secondary-white-color);
 }
 
-/* Секція ЗАМОВНИКИ */
+/* ========================Секція ЗАМОВНИКИ====================== */
 .section-customers {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -351,7 +354,7 @@ address a {
   fill: currentColor;
 }
 
-/* секція портфоліо */
+/* ========================секція портфоліо====================== */
 .section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -423,7 +426,7 @@ address a {
   color: var(--secondary-white-color);
 }
 
-/* Футер */
+/* ==========================ФУТЕР=========================== */
 .footer-description {
   color: var(--secondary-white-color);
   font-weight: 400;
@@ -479,7 +482,7 @@ address a {
 .footer-net {
   fill: var(--secondary-white-color);
 }
-/* Кнопки */
+/* -============================Кнопки==========================- */
 button {
   color: var(--primary-white-color);
   background-color: var(--primary-text-color);
@@ -530,9 +533,8 @@ button {
   padding: 12px 24px;
   border: 1px solid var(--border-btn-color);
   transition: color var(--animation-transition),
-  background-color var(--animation-transition),
-  box-shadow var(--animation-transition),
-  border var(--animation-transition);
+    background-color var(--animation-transition),
+    box-shadow var(--animation-transition), border var(--animation-transition);
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -559,8 +561,7 @@ button {
   overflow: hidden;
 }
 
-/* контейнер */
-
+/* ===========================контейнер========================= */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -578,7 +579,7 @@ button {
   align-items: baseline;
 }
 
-/* МОДАЛКА */
+/* ==========================МОДАЛКА============================= */
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -601,6 +602,8 @@ button {
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
+  padding-left: 24px;
+  padding-right: 24px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -615,7 +618,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 32px;
+  right: 24px;
   top: 32px;
   width: 24px;
   height: 24px;
@@ -636,4 +639,138 @@ button {
 }
 .close-btn:focus .modal-close {
   fill: var(--primary-white-color);
+}
+
+/* НАПОВНЕННЯ МОДАЛКИ */
+.form-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 72px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.label-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 0;
+}
+.form-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
+.input-wrapper {
+  position: relative;
+}
+.form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 11px 10px 11px 38px;
+  outline: 1px solid transparent;
+  transition: border var(--animation-transition);
+}
+.form-input:focus {
+  border: 1px solid var(--accent-color);
+}
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+.form-comment {
+  margin-bottom: 16px;
+  height: 120px;
+  padding: 8px 10px 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  transition: border var(--animation-transition);
+}
+.form-comment:focus {
+  border: 1px solid var(--accent-color);
+}
+.form-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+.form-btn {
+  display: block;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  text-align: center;
+  height: 56px;
+  border: none;
+  margin: 0 auto;
+  transition: background-color var(--animation-transition);
+  cursor: pointer;
+}
+.form-btn:hover,
+.form-btn:focus {
+  background-color: var(--accent-hover-color);
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 19px;
+  transition: fill var(--animation-transition);
+}
+.my-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 2px;
+color: transparent;
+transition: background-color var(--animation-transition);
+cursor: pointer;
+}
+.icon-checkbox {
+  fill: currentColor;
+  transition: fill var(--animation-transition);
+}
+.checkbox:checked + .checkbox-wrap > .my-checkbox {
+  background-color: var(--accent-hover-color);
+  border: 1px solid var(--accent-hover-color);
+  color: var(--secondary-white-color);
+}
+.checkbox-wrap {
+  display: flex;
+}
+.form-accept {
+  margin-left: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
 }
