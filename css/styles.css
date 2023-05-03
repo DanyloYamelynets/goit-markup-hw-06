@@ -485,7 +485,6 @@ address a {
 }
 .label-list {
   display: flex;
-  align-items: center;
   gap: 24px;
   list-style: none;
   padding: 0;
@@ -533,7 +532,7 @@ address a {
   background-color: var(--accent-hover-color);
 }
 .subscribe-icon {
-  margin: 10px 24px 10px 16px;
+  margin: 2px 24px 10px 16px;
   align-items: center;
   position: absolute;
   fill: currentColor;
@@ -812,6 +811,9 @@ button {
 .icon-checkbox {
   fill: currentColor;
   transition: fill var(--animation-transition);
+}
+.checkbox:focus + .checkbox-wrap > .my-checkbox {
+  outline: 1px solid var(--accent-color);
 }
 .checkbox:checked + .checkbox-wrap > .my-checkbox {
   background-color: var(--accent-hover-color);
