@@ -740,7 +740,8 @@ button {
   outline: 1px solid transparent;
   transition: border var(--animation-transition);
 }
-.form-input:focus {
+.form-input:focus,
+.form-input:hover {
   border: 1px solid var(--accent-color);
 }
 .form-input:focus + .form-icon {
@@ -755,7 +756,8 @@ button {
   outline: 1px solid transparent;
   transition: border var(--animation-transition);
 }
-.form-comment:focus {
+.form-comment:focus,
+.form-comment:hover {
   border: 1px solid var(--accent-color);
 }
 .form-comment::placeholder {
@@ -798,6 +800,7 @@ button {
 }
 .my-checkbox {
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   width: 16px;
