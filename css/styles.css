@@ -243,6 +243,17 @@ address a {
 }
 
 /* =========================Секція КОМАНДА====================== */
+.team-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
 .section-description {
   color: var(--secondary-text-color);
   font-weight: 400;
@@ -317,6 +328,17 @@ address a {
 }
 
 /* ========================Секція ЗАМОВНИКИ====================== */
+.customers-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
 .section-customers {
   padding-top: 120px;
   padding-bottom: 120px;
